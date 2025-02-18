@@ -1,4 +1,4 @@
-This file will take in a list of passwords seperataed by a new line character
+This file will take in a list of passwords seperated by a new line character
 and output in csv format: The hash, the password, and the algorithm.
 
 To compile the file remember to use the -lcrypto flag with gcc to compile
