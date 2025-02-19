@@ -87,8 +87,8 @@ void append_table(FILE *list, FILE *out, char *hash, int lines) {
 
 	int i = 0;
 	while (fgets(password, MAX_PASSWORD_SIZE, list) != NULL && i < lines) {
-		gethash(password, alg, digest, digest_len);
 		password[strlen(password) - 1] = '\0'; //Replaces \n
+		gethash(password, alg, digest, digest_len);
 		fprintf(out, "%s,%s,%s\n", bin_to_hex(digest, digest_len), password, alg_name);	
 		i++;
 	}
