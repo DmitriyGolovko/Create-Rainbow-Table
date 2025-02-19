@@ -2,9 +2,7 @@ This file will take in a list of passwords seperated by a new line character
 and output in csv format: The hash, the password, and the algorithm.
 
 To compile the file remember to use the -lcrypto flag with gcc to compile
-and install libssl-dev by the command: "sudo apt-get install libssl-dev"
-
-To get the appropriate libraries.
+and install libssl-dev by the command: "sudo apt-get install libssl-dev" to get the appropriate libraries.
 
 
 This program once compiled will have 1 required option and 4 optional. Use
